@@ -4,7 +4,8 @@ class Solution {
             return x;
         }//problem is solved in Ologn t.complexiity
         int num=0;
-        int left=1;
+        int left=1;//not zero so that it prevents Artihematic exception cannot divide by zero
+        
         int right=x/2;
         while(left<=right){
             //formula to find the mid value by preventing the 
