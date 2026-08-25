@@ -7,7 +7,7 @@ class Solution {
             }
             
         }
-        for(int i=1;i<=nums.length+1;i++){
+        for(int i=1;i<=map.size()+1;i++){
             int mul=i*k;
             if(!map.contains(mul)){
                 return mul;
