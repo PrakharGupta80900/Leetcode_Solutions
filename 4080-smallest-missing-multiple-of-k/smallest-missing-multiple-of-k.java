@@ -2,7 +2,10 @@ class Solution {
     public int missingMultiple(int[] nums, int k) {
         HashSet<Integer> map=new HashSet<>();
         for(int num:nums){
-            map.add(num);
+            if(num%k==0){
+                map.add(num);
+            }
+            
         }
         for(int i=1;i<=nums.length+1;i++){
             int mul=i*k;
