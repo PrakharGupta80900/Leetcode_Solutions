@@ -19,9 +19,9 @@ class Solution {
             }
         }
         if (minIndex > maxIndex) {
-            int temp = minIndex;
-            minIndex = maxIndex;
-            maxIndex = temp;
+            minIndex=minIndex^maxIndex;
+            maxIndex=maxIndex^minIndex;
+            minIndex=maxIndex^minIndex;
         }
 
 
