@@ -24,14 +24,8 @@ class Solution {
             maxIndex = temp;
         }
 
-        // 3 possible ways
-        int removeFromLeft = maxIndex + 1;
 
-        int removeFromRight = n - minIndex;
-
-        int removeBothSides = (minIndex + 1) + (n - maxIndex);
-
-        return Math.min(removeFromLeft,
-                Math.min(removeFromRight, removeBothSides));
+        return Math.min(maxIndex+1,
+                Math.min(n-minIndex, (minIndex+1)+(n-maxIndex)));
     }
 }
